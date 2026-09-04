@@ -5,6 +5,6 @@ window.KOKURYU_SUBSCRIBERS = {
   goal: 500,
   fallbackCount: 275,
   fallbackUpdatedAt: "2026-09-03",
-  endpoint: "",
+  endpoint: "https://kokuryu-subscriber.motoharu-nagata98.workers.dev",
   cacheMinutes: 30
 };
