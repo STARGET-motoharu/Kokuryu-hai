@@ -23,3 +23,36 @@
 @keyframes soundPulse{50%{box-shadow:0 0 0 9px rgba(203,174,115,0);border-color:rgba(203,174,115,.68)}}
 @media(max-width:620px){.soundDock{left:12px;right:12px;bottom:12px;max-width:none;min-width:0}.soundMiniVolume{width:62px}}
 @media(prefers-reduced-motion:reduce){.kokuryuCursor:before,.kokuryuCursor:after,.soundDock.is-blocked .soundToggle{animation:none!important}}
+
+
+/* === MOBILE / TABLET RESPONSIVE SAFETY v14 === */
+html,body{width:100%;max-width:100%;overflow-x:hidden;overscroll-behavior-x:none}
+body{min-width:0}
+main,header,section,footer{max-width:100%}
+main{width:100%;overflow-x:hidden}
+img,video,canvas,svg{max-width:100%}
+header,header>* ,nav,.section,.latestWrap,.galleryPortal,.galleryPortalInner,.archive,.hostGrid,.links,.social{min-width:0}
+
+/* CSS-drawn external-link icon: avoids iOS/iPadOS emoji rendering. */
+.extIcon{display:inline-block;position:relative;width:11px;height:11px;margin-left:5px;vertical-align:-1px;flex:0 0 11px;color:currentColor}
+.extIcon:before{content:"";position:absolute;right:1px;top:1px;width:6px;height:6px;border-top:1.25px solid currentColor;border-right:1.25px solid currentColor}
+.extIcon:after{content:"";position:absolute;left:1px;bottom:2px;width:8px;height:1.25px;background:currentColor;transform:rotate(-45deg);transform-origin:left center;border-radius:2px}
+
+@media(max-width:900px){
+  html,body{touch-action:pan-y pinch-zoom}
+  header{width:100%;max-width:100vw;overflow:hidden}
+  header>a{flex:0 0 auto;min-width:0}
+  header nav{min-width:0;max-width:calc(100vw - 100px);overflow:hidden;justify-content:flex-end;white-space:nowrap}
+  header nav a{flex:0 0 auto}
+  .social,.archiveLinks a,.galleryPortalCta,.nextTournament>a{max-width:100%}
+  .social>div,.archiveLinks a>*{min-width:0}
+  .social b,.social small{overflow-wrap:anywhere}
+}
+@media(max-width:520px){
+  header{padding-left:16px!important;padding-right:16px!important}
+  header nav{max-width:calc(100vw - 82px)}
+  .section,.latestWrap,.galleryPortal,.archive{max-width:100%;overflow-x:hidden}
+  .soundDock{box-sizing:border-box}
+}
+@media(hover:none){.motion-card:hover{transform:none!important}}
+@supports(overflow:clip){html,body,main{overflow-x:clip}}
