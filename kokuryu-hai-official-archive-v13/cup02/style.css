@@ -1,0 +1,191 @@
+
+:root{--bg:#080a0c;--navy:#082c40;--crimson:#5d1212;--deepred:#7c1818;--gold:#cbae73;--paper:#eee9df;--line:#cbae7345}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--paper);font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Arial,sans-serif;background-image:radial-gradient(circle at 82% 15%,#7c181822,transparent 22%),radial-gradient(circle at 22% 72%,#5d12121f,transparent 24%),linear-gradient(#07090aef,#07090aef),url('images/background.png');background-attachment:fixed;background-size:cover}a{color:inherit;text-decoration:none}main{overflow:hidden}
+header{position:fixed;inset:0 0 auto;z-index:20;height:76px;padding:0 clamp(20px,4vw,70px);display:flex;align-items:center;justify-content:space-between;background:linear-gradient(#120607f5,#050708b8,transparent);backdrop-filter:blur(7px)}header>a{display:flex;align-items:center;gap:15px}header img{width:100px;height:50px;object-fit:cover}header span{font-size:9px;letter-spacing:.2em;color:#aaa}header span b{color:var(--gold);font-size:15px}nav{display:flex;gap:26px}nav a{font-size:10px;letter-spacing:.12em;color:#ccc}nav a:hover{color:var(--gold)}
+.hero{height:min(100svh,950px);min-height:680px;position:relative;display:flex;align-items:flex-end;padding:0 clamp(24px,7vw,125px) 10vh}.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.shade{position:absolute;inset:0;background:linear-gradient(90deg,#120607f3 0%,#07080988 48%,transparent 75%),linear-gradient(0deg,#120607d9 0%,transparent 50%),radial-gradient(circle at 82% 38%,#7c181829,transparent 28%)}.heroText{position:relative;z-index:2}.heroText>p,.title small{color:var(--gold);font-size:9px;font-weight:bold;letter-spacing:.22em}.hero h1{font:400 clamp(50px,7vw,110px)/.95 Georgia,"Yu Mincho",serif;letter-spacing:-.07em;margin:20px 0}.hero h1 small{display:block;font:12px Arial;letter-spacing:.35em;color:#ccc;margin-bottom:15px}.date{display:flex;align-items:baseline;gap:15px;margin:28px 0}.date strong{font:clamp(28px,3vw,44px) Georgia}.date span{font-size:10px;color:var(--gold);letter-spacing:.2em}.date em{font-style:normal;font-size:13px}.button{display:inline-flex;gap:25px;align-items:center;border:1px solid var(--gold);background:linear-gradient(90deg,#082c40c4,#5d1212b8);padding:16px 22px;font-size:10px;letter-spacing:.18em}.button small{color:var(--gold)}
+.section{max-width:1280px;margin:auto;padding:105px clamp(24px,5vw,70px)}.title{display:flex;align-items:center;gap:22px;margin-bottom:60px}.title>b{font:12px Georgia;color:var(--gold);border-right:1px solid var(--line);padding-right:22px}.title small{display:block;margin-bottom:7px}.title h2{font:400 clamp(30px,4vw,50px) Georgia,"Yu Mincho",serif;margin:0}.note{color:#777;font-size:11px}.about{display:grid;grid-template-columns:1fr 1.35fr;gap:80px}.about>p{font:clamp(25px,3vw,42px)/1.6 Georgia,"Yu Mincho",serif;margin:0}.about>p strong{color:var(--gold);font-size:1.3em;font-weight:400}.about>div>p{font-size:14px;line-height:2;color:#c2beb6;margin:0 0 35px}.about dl{margin:0;border-top:1px solid var(--line)}.about dl div{display:grid;grid-template-columns:100px 1fr;border-bottom:1px solid var(--line);padding:17px 0}.about dt{color:var(--gold);font-size:8px;letter-spacing:.2em}.about dd{margin:0;font-size:13px}
+.block{font:12px Georgia;color:var(--gold);letter-spacing:.18em;border-bottom:1px solid var(--line);padding-bottom:12px;margin-top:42px}.teamGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.team{min-height:170px;border:1px solid #ffffff18;background:linear-gradient(135deg,#5d121240,#082c4070 44%,#141414d2);padding:24px;display:flex;align-items:center;gap:20px}.team>b{flex:0 0 62px;height:62px;border:1px solid var(--gold);display:grid;place-items:center;font:22px Georgia;color:var(--gold)}.team small{font-size:7px;letter-spacing:.2em;color:#777}.team h3{font:400 18px/1.4 Georgia,"Yu Mincho",serif;margin:8px 0 15px}.team p{font-size:7px;letter-spacing:.2em;color:var(--gold);margin:0}
+.schedule{border-top:1px solid var(--line)}.schedule article{display:grid;grid-template-columns:160px 1fr;align-items:center;border-bottom:1px solid var(--line);padding:21px 10px}.schedule article>div{display:flex;flex-direction:column}.schedule small{font-size:7px;letter-spacing:.2em;color:var(--gold)}.schedule strong{font:20px Georgia;margin-top:4px}.schedule article>p{display:grid;grid-template-columns:1fr 45px 1fr;align-items:center;margin:0;font:clamp(14px,2vw,22px) Georgia,"Yu Mincho",serif}.schedule article>p span:last-child{text-align:right}.schedule article>p b{text-align:center;font:9px Arial;color:var(--gold)}.schedule .final{background:linear-gradient(90deg,#cbae731c,transparent)}.schedule .final strong,.schedule .final p{color:var(--gold)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);margin-bottom:16px}.facts div{padding:22px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:8px}.facts div:last-child{border:0}.facts small{font-size:7px;letter-spacing:.2em;color:var(--gold)}.facts b{font:400 15px Georgia,"Yu Mincho",serif}.rules{display:grid;grid-template-columns:1fr 1fr;gap:14px}.rule{border:1px solid #ffffff18;background:#0c0e0fca;padding:28px}.rule.danger{border-color:#97362b99;background:#2c0e0c70}.rule h3{font:400 19px Georgia,"Yu Mincho",serif;margin:0 0 18px}.rule h3 i{font:10px Georgia;color:var(--gold);font-style:normal;margin-right:14px}.rule>div{font-size:12px;line-height:1.85;color:#bbb7af}.rule p{margin:0 0 10px}.rule ul{padding-left:1.3em;margin:0}.rule li+li{margin-top:6px}.prize{margin-top:14px;padding:26px;border-left:3px solid var(--gold);background:linear-gradient(90deg,#cbae7325,transparent)}.prize small{font-size:8px;letter-spacing:.2em;color:var(--gold)}.prize p{font:16px Georgia,"Yu Mincho",serif;margin:8px 0}
+.stream{max-width:none;padding:90px max(7vw,24px);background:linear-gradient(100deg,#5d1212f1,#082c40c2),url('images/background.png');background-size:cover;display:flex;align-items:center;justify-content:space-between}.stream p{font-size:8px;letter-spacing:.23em;color:var(--gold)}.stream h2{font:400 40px Georgia,"Yu Mincho",serif;margin:6px 0 10px}.stream span{font-size:11px;color:#a9b1b3}
+.archive{display:grid;grid-template-columns:1.2fr 1fr;min-height:330px;border:1px solid #ffffff1b}.archive>div:first-child{position:relative;background:linear-gradient(#05090a99,#05090ab5),url('images/background.png');background-size:cover;display:grid;place-items:center}.archive img{width:70%}.archive>div:first-child small{position:absolute;left:22px;bottom:20px;color:var(--gold);letter-spacing:.2em}.archive>div:last-child{padding:50px;background:linear-gradient(135deg,#5d121223,#082c4048);display:flex;flex-direction:column;justify-content:center}.archive p{font-size:9px;color:var(--gold)}.archive h3{font:40px Georgia;margin:8px 0}.archive span{font-size:11px;color:#888}footer{text-align:center;padding:70px 20px;border-top:1px solid var(--line)}footer img{width:170px}footer p{font:11px Georgia;color:#aaa;margin:20px 0 8px}footer small{color:#555;font-size:7px}
+@media(max-width:800px){header{height:60px}header img{width:74px;height:38px}header span{display:none}nav{gap:12px}nav a{font-size:8px}nav a:nth-child(4),nav a:nth-child(5){display:none}.hero{height:84svh;min-height:620px;padding-bottom:60px}.hero>img{object-position:61% center}.shade{background:linear-gradient(0deg,#040607fa,#04060744 80%),linear-gradient(90deg,#04060799,transparent)}.hero h1{font-size:48px}.date{flex-wrap:wrap}.date em{width:100%}.section{padding:78px 22px}.title{margin-bottom:42px}.about,.archive{grid-template-columns:1fr;gap:40px}.teamGrid,.rules{grid-template-columns:1fr}.schedule article{grid-template-columns:78px 1fr;padding:17px 2px}.schedule strong{font-size:15px}.schedule article>p{grid-template-columns:1fr 28px 1fr;font-size:11px;line-height:1.5}.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(2){border-right:0}.facts div:nth-child(-n+2){border-bottom:1px solid var(--line)}.facts div{padding:16px}.stream{display:block}.stream .button{margin-top:25px}.archive>div:first-child{min-height:240px}.archive>div:last-child{padding:32px}}
+@media(max-width:430px){.hero h1{font-size:41px}.heroText>p{font-size:7px;line-height:1.7}.title{gap:13px}.title>b{padding-right:13px}.about dl div{grid-template-columns:78px 1fr}.team{padding:19px}.team>b{flex-basis:52px;height:52px;font-size:18px}.team h3{font-size:15px}.rule{padding:23px 19px}}
+.team ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}.team li{font-size:11px;color:#c8c4bc;letter-spacing:.04em}.schedule article>p em{font:8px Arial;background:var(--gold);color:#151515;padding:5px 8px;border-radius:15px;margin-left:8px}.schedule .ceremony p{display:block;letter-spacing:.12em;color:#aaa}.schedule .ceremony p span{text-align:left}footer>a{display:block;margin-bottom:18px}footer b{display:block;color:var(--gold);font-size:9px;letter-spacing:.14em}
+
+/* FINAL RESULTS */
+.resultsSection{position:relative}
+.champion{position:relative;overflow:hidden;border:1px solid var(--gold);background:linear-gradient(115deg,#7c18182b,#082c4070 46%,#0b0d0ed8);padding:42px clamp(24px,5vw,58px);margin-bottom:16px}
+.champion:after{content:"01";position:absolute;right:28px;top:50%;transform:translateY(-52%);font:120px/.8 Georgia,serif;color:#cbae7314;pointer-events:none}
+.champion small{display:block;font-size:8px;font-weight:bold;letter-spacing:.28em;color:var(--gold);margin-bottom:10px}
+.champion span{display:block;font:15px Georgia,"Yu Mincho",serif;color:#d6c19a;margin-bottom:5px}
+.champion h3{position:relative;z-index:1;font:400 clamp(31px,4.8vw,64px)/1 Georgia,"Yu Mincho",serif;letter-spacing:-.03em;margin:0;color:#f0e9dc}
+.resultsGrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.resultBlock{border:1px solid #ffffff18;background:linear-gradient(135deg,#5d12122d,#082c4050 42%,#111416d8);padding:28px}
+.resultHead{display:flex;align-items:baseline;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:3px}
+.resultHead small{font-size:7px;letter-spacing:.2em;color:#777}
+.resultHead h3{font:400 21px Georgia,serif;letter-spacing:.12em;color:var(--gold);margin:0}
+.resultBlock ol{list-style:none;padding:0;margin:0}
+.resultBlock li{display:grid;grid-template-columns:60px 1fr;gap:16px;align-items:center;padding:18px 3px;border-bottom:1px solid #ffffff10}
+.resultBlock li:last-child{border-bottom:0}
+.resultBlock li b{font:14px Georgia,"Yu Mincho",serif;color:var(--gold)}
+.resultBlock li span{font:400 16px/1.5 Georgia,"Yu Mincho",serif}
+.resultBlock li.winner span{color:#f1dfb7}
+@media(max-width:800px){nav{gap:10px}.resultsGrid{grid-template-columns:1fr}.champion{padding:30px 24px}.champion:after{font-size:86px}.resultBlock{padding:22px 19px}.resultBlock li{grid-template-columns:48px 1fr}.resultBlock li span{font-size:14px}}
+@media(max-width:620px){nav a:nth-child(6){display:none}}
+
+
+/* TEAM LOGOS / UPDATED ARCHIVE */
+.team{
+  min-height:310px;
+  padding:0;
+  display:grid;
+  grid-template-rows:128px 1fr;
+  gap:0;
+  overflow:hidden;
+  align-items:stretch;
+}
+.teamTop{
+  position:relative;
+  min-height:128px;
+  display:grid;
+  place-items:center;
+  border-bottom:1px solid #ffffff16;
+  background:
+    radial-gradient(circle at 50% 35%,#cbae7317,transparent 42%),
+    linear-gradient(135deg,#4e1010,#092b3d 55%,#0b1115);
+}
+.teamTop>b{
+  position:absolute;
+  left:15px;
+  top:15px;
+  width:42px;
+  height:42px;
+  border:1px solid var(--gold);
+  display:grid;
+  place-items:center;
+  font:16px Georgia;
+  color:var(--gold);
+  background:#070a0cbf;
+  z-index:2;
+}
+.teamLogo{
+  width:calc(100% - 52px);
+  height:104px;
+  display:grid;
+  place-items:center;
+}
+.teamLogo img{
+  display:block;
+  max-width:100%;
+  max-height:96px;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  filter:drop-shadow(0 8px 16px #0009);
+}
+.teamMonogram{
+  font:400 48px/1 Georgia,serif;
+  letter-spacing:.08em;
+  color:#cbae737d;
+}
+.team>div:last-child{padding:22px 23px 24px}
+.team h3{margin-top:6px}
+.team ul{margin-top:4px}
+
+/* SECOND AFTER PARTY */
+.afterParty{
+  max-width:none;
+  padding:55px max(7vw,24px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:35px;
+  background:
+    radial-gradient(circle at 76% 50%,#7c181823,transparent 30%),
+    linear-gradient(100deg,#180f10,#07141b);
+  border-bottom:1px solid var(--line);
+}
+.afterParty small{
+  font-size:8px;
+  letter-spacing:.22em;
+  color:var(--gold);
+}
+.afterParty h2{
+  font:400 clamp(26px,3.5vw,42px) Georgia,"Yu Mincho",serif;
+  margin:8px 0 10px;
+}
+.afterParty p{
+  margin:0;
+  font-size:11px;
+  color:#9ba2a4;
+}
+.afterParty>.button{
+  flex:0 0 auto;
+}
+
+@media(max-width:800px){
+  .team{min-height:0;grid-template-rows:120px 1fr}
+  .teamTop{min-height:120px}
+  .teamLogo{height:96px}
+  .teamLogo img{max-height:88px}
+  .afterParty{display:block}
+  .afterParty>.button{margin-top:25px}
+}
+@media(max-width:430px){
+  .team{padding:0}
+  .teamTop>b{width:38px;height:38px;font-size:14px}
+  .team>div:last-child{padding:20px}
+}
+
+
+.championLogo{
+  position:absolute;
+  right:38px;
+  bottom:22px;
+  z-index:1;
+  width:min(270px,28vw);
+  max-height:105px;
+  object-fit:contain;
+  filter:drop-shadow(0 10px 18px #0009);
+}
+@media(max-width:800px){
+  .championLogo{
+    position:relative;
+    right:auto;
+    bottom:auto;
+    display:block;
+    width:min(300px,80%);
+    max-height:90px;
+    margin:24px 0 0 auto;
+  }
+}
+
+.teamLogo img[src$=".gif"], .championLogo[src$=".gif"], .teamLogo img[src*="animated"], .championLogo[src*="animated"]{image-rendering:auto;will-change:transform;transform:translateZ(0);}
+
+
+/* === KOKURYU MOTION SYSTEM v1 === */
+html{scrollbar-color:#5b534b #080a0c}
+body{position:relative}
+body:before{content:"";position:fixed;inset:-22vmax;z-index:-1;pointer-events:none;background:radial-gradient(circle at 22% 30%,#0c5b9a16,transparent 24%),radial-gradient(circle at 78% 64%,#8c201b13,transparent 22%);animation:ambientDrift 18s ease-in-out infinite alternate;transform:translate3d(0,0,0)}
+@keyframes ambientDrift{0%{transform:translate3d(-1.5%,0,0) scale(1)}100%{transform:translate3d(1.5%,-1%,0) scale(1.04)}}
+.motion-reveal{opacity:0;transform:translate3d(0,26px,0);filter:blur(8px);transition:opacity .85s cubic-bezier(.2,.75,.2,1),transform .85s cubic-bezier(.2,.75,.2,1),filter .85s ease;transition-delay:var(--reveal-delay,0ms)}
+.motion-reveal.is-visible{opacity:1;transform:none;filter:none}
+.motion-card{position:relative;isolation:isolate;transition:transform .38s cubic-bezier(.2,.75,.2,1),border-color .35s ease,box-shadow .35s ease}
+.motion-card:before{content:"";position:absolute;inset:-1px;z-index:-1;pointer-events:none;opacity:0;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),#ffffff14,transparent 54%);transition:opacity .35s ease}
+.motion-card:hover{transform:translateY(-5px);border-color:#ffffff30;box-shadow:0 18px 50px #00000030}.motion-card:hover:before{opacity:1}
+.title,.sectionHead{position:relative;overflow:hidden}.title:after,.sectionHead:after{content:"";position:absolute;left:0;bottom:0;width:32%;height:1px;background:linear-gradient(90deg,transparent,#cbae73,#ffffff,transparent);transform:translateX(-150%);opacity:.45}.title.is-visible:after,.sectionHead.is-visible:after{animation:lineSweep 1.4s .2s ease-out both}@keyframes lineSweep{to{transform:translateX(430%)}}
+.heroLogo,.brand img,header>a img{animation:softFloat 6s ease-in-out infinite}@keyframes softFloat{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-5px,0)}}
+.teamLogo img[src*="animated"],.championLogo[src*="animated"]{filter:drop-shadow(0 0 22px #ffffff0d) drop-shadow(0 12px 24px #000b)}
+#scrollProgress{position:fixed;z-index:9999;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,#0f5794,#cbae73,#9a2721);box-shadow:0 0 14px #cbae7377;pointer-events:none}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}.motion-reveal{opacity:1!important;transform:none!important;filter:none!important}}
+
+
+/* === KOKURYU SHARED SERIES LANGUAGE v2 === */
+:root{--series-accent:#9a2721;--series-gold:#cbae73;--series-paper:#eee9df;--series-line:#ffffff1c}
+header{border-bottom:1px solid #ffffff0d}
+header nav a{position:relative}
+header nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-8px;height:1px;background:linear-gradient(90deg,var(--series-accent),var(--series-gold));transition:right .28s ease}
+header nav a:hover:after{right:0}
+.button,.nextTournament>a,.archive,.team,.teamCard,.rule,.resultBlock,.champion{box-shadow:inset 0 0 0 1px #ffffff04}
+@media(pointer:fine){html,body,a,button{cursor:none!important}.kokuryuCursor,.kokuryuCursorDot{position:fixed;left:0;top:0;pointer-events:none;z-index:10050;transform:translate3d(-100px,-100px,0)}.kokuryuCursor{width:30px;height:30px;border:1px solid rgba(238,233,223,.40);border-radius:999px;background:radial-gradient(circle at 50% 50%,rgba(203,174,115,.12) 0%,rgba(203,174,115,.05) 45%,rgba(203,174,115,0) 72%);box-shadow:0 0 0 1px rgba(203,174,115,.08),0 10px 28px rgba(0,0,0,.30);backdrop-filter:blur(2px);transition:width .18s ease,height .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease,opacity .18s ease;opacity:.95}.kokuryuCursorDot{width:6px;height:6px;border-radius:50%;background:#cbae73;box-shadow:0 0 12px rgba(203,174,115,.70),0 0 2px rgba(255,255,255,.75)}.kokuryuCursor.is-link{width:46px;height:46px;border-color:rgba(255,255,255,.66);background:radial-gradient(circle at 50% 50%,rgba(255,255,255,.08) 0%,rgba(203,174,115,.10) 42%,rgba(203,174,115,0) 72%);box-shadow:0 0 0 1px rgba(255,255,255,.08),0 14px 34px rgba(0,0,0,.36)}}
+img[src*="team-nzg"]{animation:nzgPresence 3.6s ease-in-out infinite;transform-origin:50% 55%}@keyframes nzgPresence{0%,100%{transform:translateY(0) scale(1);filter:drop-shadow(0 10px 22px #000a) drop-shadow(0 0 0 transparent)}50%{transform:translateY(-7px) scale(1.025);filter:drop-shadow(0 15px 26px #000b) drop-shadow(0 0 18px #b8e8ff32)}}
